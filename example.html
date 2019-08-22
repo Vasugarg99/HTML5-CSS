@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title> This is the Title </title><!--we use type css p-paragraph,colour-properties--><!--style more than one using"h1, p1{__}-->
+<meta charset="utf-8"/>
+<script src="javafile.js"></script>
+<link rel="stylesheet" type="text/css" href="sample.css"/><!--if want to apply style to all webpages,import the style from a css saved file-->
+<style type="text/css">
+    body{background-color:floralwhite;
+          color: black;
+          background-image: url(image.png);
+          background-repeat:;
+          background-position:;
+        }
+     h1 {color:rgb(253, 15, 114);
+         font-family:Arial;
+         text-align: center;
+         background-color: yellow;
+         padding-top: 30px;
+         padding-bottom: 10px;
+         border-color: red;
+         border-width: 3px;
+         border-style: dashed;
+        }
+     p  {line-height: 150%;
+         text-indent: 50px;
+         background-color: aquamarine;
+         width: 400px;
+         margin: 2px;
+        }
+    a:link   {color: blue;
+              text-decoration: none;
+             }
+    a:visited{color: greenyellow;
+             }
+    a:hover  {background-color:seashell;
+              color:red;
+              text-decoration:underline;
+              font-weight: bold;
+             }
+    a:active {background-color: slategrey;
+             }
+    table{border:#3px_solid_blue; }
+    tr   {background-color: thistle;}
+    td   {border:#2px_dashed_red;}
+    span {color:tomato;
+          text-decoration: underline;
+          font-size: 30px;
+         }
+    div  {border:2px solid blue;
+          position: absolute;
+          width:400px;
+          top:350px;
+          left:400px;
+          }
+    .redboy{color:red;}
+    #divboy{color:blue;
+            border:2px dotted red;
+            top:250px;
+            left:500px;
+            }
+    p:first-letter{font-size:20px;
+                   color:black;
+                   font-weight: bold;
+                   }
+    img {max-height: 200px;
+         max-width: 300px;
+        }
+</style>
+</head>
+
+<body>
+<a href="#first"> First section</a>
+<a href="#second"> Second section</a>
+<h1><a name="first"></a>This is the header 1 with larger text! </h1>
+<p>This is a <strong>paragraph</strong></p>
+<!--this is comment which is not shown-->
+<hr /> 
+<h2><a name="second"></a>This is the header 2 with smaller text! </h2>
+<p1>This is a <em>second(2)</em> paragraph<br /> And this is a new line.</p1>
+This is the Body of the website.
+<a href="https://www.google.com/" title="Awesome search engine" > Click on the link</a><!-- href is the location and its a attribute-->
+<br /><img src="img1.jpg" height="150"/><br />
+<p2>this is a normal paragraph with<span>span in it</span> like this</p2>
+<table border="4" width="100%" cellpadding="5" cellspacing="3"><!--making table,cellpadding is space btwn border n word,cellspacing is space btwn border-->
+    <tr>
+        <th colspan="3"><h4>People</h4></th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Weight</th>
+    </tr><tr>
+        <td>Vasu</td>
+        <td>20</td>
+        <td>59</td>
+    </tr>
+    <tr>
+        <td>Srajan</td>
+        <td>19</td>
+        <td>80</td>
+    </tr>
+</table>
+<ul><!--ul-unorder list , ol-order list-->
+    Company name
+    <li>airbnb</li>
+    <li>microsoft</li>
+    <li>google</li>
+</ul>
+<div>Its a floating paragraph anywhere on the screen!!</div>
+<div id="divboy">Its a second floating paragraph anywhere on the screen!!</div><!--appling css using id(#)-->
+<p3 class="redboy">this the paragraph in red color</p3><!--appling css using class(.)-->
+<br /><br />
+<section id="leftbox">
+    This is the form section!
+<form action="Dosomething" method="post">
+    (key) Username: <input type="text" name="Username" size="10" maxlength="9" value="Enter ID" id="one" /><br/>
+    (value) Password : <input type="password" name="pword" size="10" maxlength="8" id="two" /><br/>
+    <input type="button" value="Save" id="button" />
+    <input type="submit" value="Submit!" id="submit" />
+    <br />
+    Male: <input type="radio" name="Sex"  value="Male" />
+    Female: <input type="radio" name="Sex" value="Female" />
+    <br />
+    <p3>Enter the type of Employee!</p3>
+    <br />
+    Accountant:<input type="checkbox" name="Employee" value="Accountant" />
+    Enginner:<input type="checkbox" name="Employee" value="Enginner" />
+    SecurityGuard:<input type="checkbox" name="Employee" value="SecurityGuard" />
+    <br />
+    <p3>What is your salary?</p3>
+    <select name="salary">
+        <option value="Rs">Below 10000</option>
+        <option value="Rs">Below 25000</option>
+        <option value="Rs">Below 35500</option>
+        <option value="Rs">Below 555500</option>
+    </select>
+    <br/>
+    Tell me about yourself:
+    <br/>
+    <textarea name="bio" rows="10" cols="40">Write something</textarea>
+    <br/>
+    Now you can choose a file!
+    <br/><input type="file" name="anyfile" />
+</form>
+</section>
+<section id="centerbox">Shown here</section>
+<section id="rightbox">
+<div1 id="wrapper">
+<p4 id="first1">First</p4><br>
+<p4 id="second">second</p4><br>
+<p4 id="third">third</p4><br>
+<video src="video.mp4"  autoplay loop controls></video>
+</div1> 
+</section>
+</body>
+</html>
